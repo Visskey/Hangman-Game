@@ -24,7 +24,25 @@ class Game {
     }
     public static void FillojmeLojen(String word, String word1)
     {
-        
+        int guess_ = 0;
+        int wrong = 0;
+
+        String guess;
+        char letter;
+
+        boolean guessescontainsguess;
+        String guesses = "";
+        boolean guessinword;
+
+
+        while (wrong < 5 && word1.contains("_")) {
+
+            System.out.println(word1 + "\n");
+            int temp = 5 - wrong;
+            if (wrong != 0) {
+                System.out.println("Ju keni " + temp + " jeta te mbetura");
+            }
+            System.out.print("Shkronja juaj:");
     }
         
 public static void main(String[] args)
